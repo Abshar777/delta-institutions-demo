@@ -7054,7 +7054,12 @@ footer .social-icon-circle.hover-light a:hover {
         opacity: 0; }
 
 
-        @media (max-width:772px) {
+        @media (max-width:600px) {
+          .wrapper-imgs{
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+            gap: 1rem;
+          }
           .wrapper-imgs .fit-img {
             height: 350px !important;
           }
@@ -7063,14 +7068,15 @@ footer .social-icon-circle.hover-light a:hover {
         @media (max-width:992px) {
           .wrapper-imgs{
             display: grid;
-            grid-template-columns: repeat(1, minmax(0, 1fr));
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 1rem;
+            width: 100%;
           }
           .wrapper-imgs .fit-img {
             translate: none; 
              position: relative;
               rotate: none; scale: none;
-               width: 110%;
+               width: 100%;
                 border-radius: 15px;
                  height: 450px;
             border-radius: 60px;
