@@ -5443,6 +5443,12 @@ b, strong {
   transition: transform 0.3s ease, opacity 0.4s ease, -webkit-transform 0.3s ease;
   z-index: 99999; }
 
+
+  @media (min-width:772px) {
+    .cursor{
+      display: none;
+    }
+  }
 .cursor-active {
   -webkit-transform: translate(-50%, -50%) scale(8);
   -ms-transform: translate(-50%, -50%) scale(8);
@@ -7048,6 +7054,11 @@ footer .social-icon-circle.hover-light a:hover {
         opacity: 0; }
 
 
+        @media (max-width:772px) {
+          .wrapper-imgs .fit-img {
+            height: 350px !important;
+          }
+        }
 
         @media (max-width:992px) {
           .wrapper-imgs{
