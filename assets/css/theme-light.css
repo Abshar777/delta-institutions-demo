@@ -22,19 +22,13 @@
 
 body.tt-lightmode-on {
   /* General */
-  --tt-dark-color: #e5e3dc; /* Template light color. #e5e3dc */
-  --tt-light-color: #212121; /* Template dark color. #212121 */
-
-  --tt-bg-color: #e5e3dc; /* Template background color. #e5e3dc */
-  --tt-text-color: #032421; /* Template text color. #212121 */
-  --tt-text-muted-color: #666; /* Template text muted color. #666 */
-  --tt-border-color: #666; /* Template borders color. #666 */
-
-  --tt-linear-text-bg-color: rgb(
-    0 0 0 / 20%
-  ); /* Template text fill color. For linear text reveal effect (do not change it!). rgb(0 0 0 / 20%) */
-
-  /* Cursor ball */
+  --tt-dark-color: #e5e3dc;
+  --tt-light-color: #212121;
+  --tt-bg-color: #e5e3dc;
+  --tt-text-color: #ffffff;
+  --tt-text-muted-color: #666;
+  --tt-border-color: #666;
+  --tt-linear-text-bg-color: rgb(0 0 0 / 10%);
   --tt-ball-border-color: #999; /* Ball border color. #999 */
 }
 

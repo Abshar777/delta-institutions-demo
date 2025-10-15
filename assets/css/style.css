@@ -8265,6 +8265,10 @@ footer .social-icon-circle.hover-light a:hover {
   align-items: center;
   position: relative; }
 
+.navbar{
+  border-radius: 27rem;
+}
+
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 992px) {
   .md-mb10 {
@@ -8397,7 +8401,10 @@ footer .social-icon-circle.hover-light a:hover {
     display: none; }
   .navbar {
     padding-top: 15px;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    border-radius: 3rem;
+   
+  }
     .navbar .navbar-collapse {
       max-height: 440px;
       overflow: auto; }
