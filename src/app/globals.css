@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.collapse{
+  visibility: visible;
+}
+
+
+
+.gridAnim {
+  transition: all linear 0.3s;
+  background-size: 35px 35px;
+  background-position-x: 10rem;
+  animation: backgroundP 600s infinite;
+  background-image: linear-gradient(to right, #3231310f, #0000 1px),
+    linear-gradient(#3231310f, #0000 1px);
+}
+
+
+
+
+/* hide input wheel */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+
+ .whiteTextBtn p{
+  color: white ;
+ }
+
+ .blckTextBtn p{
+  color: black !important ;
+ }
+
+@keyframes backgroundP {
+  0% {
+    background-position: 0rem;
+  }
+  100% {
+    background-position: 1000rem;
+  }
+}
