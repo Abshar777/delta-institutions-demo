@@ -12,10 +12,15 @@ const Footer = () => {
   const contactInfo = [
     "Gold souq,Metro station- One Deira Building ,410. Dubai-United Arab Emirates",
     "info@deltainstitutions.com",
-    "+971507528009", 
+    "+971507528009",
   ];
 
-  const links = ["Delta Digital Academy", "Delta Trading Academy", "Delta Destinations", "Delta Blockchain Academy"];
+  const links = [
+    "Delta Digital Academy",
+    "Delta Trading Academy",
+    "Delta Destinations",
+    "Delta Blockchain Academy",
+  ];
 
   return (
     <footer className="pb-50px rounded-t-3xl backdrop-blur-3xl bg-black/5 pt-10">
@@ -41,8 +46,9 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="col-lg-5">
-            <div className="item d-flex text-uppercase md-mb30">
+            <div className="item d-flex  flex-col text-uppercase mb-10">
               <h6 className="mr-25px fs-18">Find Us</h6>
+              <br />{" "}
               <div>
                 {contactInfo.map((info, index) => (
                   <p
@@ -60,7 +66,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="col-lg-3">
-            <div className="item d-flex text-uppercase">
+            <div className="item d-flex flex-col mb-10 gap-2  text-uppercase">
               <h6 className="mr-25px fs-18">Links</h6>
               <div>
                 {links.map((link, index) => (

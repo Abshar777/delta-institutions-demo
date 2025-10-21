@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import {Boldonse } from "next/font/google";
 import "./globals.css";
 import Indexlayout from "@/components/layout";
+import "@/../public/assets/css/blog.css"
+import "@/../public/assets/css/helper.css"
+import "@/../public/assets/css/theme.css"
+import "@/../public/assets/css/theme-light.css"
 import "@/../public/assets/css/plugins.css"
 import "@/../public/assets/css/style.css"
 import Scripts from "@/components/layout/scripts";

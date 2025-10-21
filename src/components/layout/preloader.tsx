@@ -17,7 +17,7 @@ const Preloader = () => {
           {/* Hint: You may need to change the img height and opacity to match your logo type.
               You can do this from the "theme.css" file (find: ".tt-ptr-prel-image"). */}
           <img
-            src="assets/imgs/our/logo.png"
+            src="/assets/imgs/our/logo.png"
             className="tt-ptr-prel-image"
             alt="Logo"
           />

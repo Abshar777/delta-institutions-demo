@@ -8,8 +8,8 @@ const DeltaGroupSection = () => {
       subtitle: "Blockchain Academy",
     },
     {
-      img: "./assets/imgs/our/d3.png",
-      title: "Delta Destinations",
+      img: "./assets/imgs/our/d6.png",
+      title: "Delta Academy",
       subtitle: "Language Academy",
     },
     {

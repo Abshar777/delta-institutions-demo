@@ -178,9 +178,18 @@
       // Animate page header elements
       if ($(".ph-caption-title").length) {
         tl_transitOut.from(
+          ".ph-caption-title .tt-cap-word-wrap",
+          { overflow:'hidden', clearProps: "overflow" },
+        );
+        tl_transitOut.from(
           ".ph-caption-title .tt-cap-word",
-          { yPercent: 101, ease: Power2.easeOut, clearProps: "yPercent" },
+          { yPercent: 101,opacity:0, ease: Power2.easeOut, clearProps: "yPercent" },
           1.3
+        );
+        tl_transitOut.from(
+          ".ph-caption-title .tt-cap-word-wrap",
+          { overflow:'visible', clearProps: "overflow" },
+          
         );
         // tl_transitOut.set(".ph-caption-title .tt-cap-word-wrap", { overflow: "unset", clearProps: "overflow" }, 1.87); // Remove "overflow: hidden;"
       }

@@ -54,13 +54,14 @@ const Heade = () => {
         href="/assets/vendor/swiper/css/swiper-bundle.min.css"
       />
 
+      {/* <link rel="stylesheet" href="/assets/css/blog.css" />
       <link rel="stylesheet" href="/assets/css/helper.css" />
       <link rel="stylesheet" href="/assets/css/theme.css" />
 
       <link rel="stylesheet" href="/assets/css/theme-light.css" />
       <link rel="stylesheet" href="/assets/css/plugins.css" />
 
-      <link rel="stylesheet" href="/assets/css/style.css" />
+      <link rel="stylesheet" href="/assets/css/style.css" /> */}
     </head>
   );
 };

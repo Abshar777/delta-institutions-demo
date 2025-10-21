@@ -2,10 +2,10 @@ import React from "react";
 
 const Navbar = () => {
   const navItems = [
-    { label: "Home", href: "page-contact.html" },
-    { label: "Blogs", href: "page-contact.html" },
-    { label: "Team", href: "page-contact.html" },
-    { label: "Contact Us", href: "page-contact.html" },
+    { label: "Home", href: "/" },
+    { label: "Blogs", href: "/blogs" },
+    { label: "Hiring", href: "/hiring" },
+    { label: "Contact Us", href: "/contact" },
   ];
 
   return (
@@ -38,7 +38,7 @@ const Navbar = () => {
                 filter: "contrast(0) brightness(100)",
                 scale: "1.4",
               }}
-              src="./assets/imgs/our/logo.png"
+              src="/assets/imgs/our/logo.png"
               alt="logo"
             />
           </a>

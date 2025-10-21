@@ -6,6 +6,7 @@ import Header from "../global/header";
 import Footer from "../global/footer";
 import { Toaster } from "sonner";
 import WhatsappButton from "../global/whatsapp";
+import ReactQueryProvider from "../providers/react-query";
 
 const Indexlayout = ({ children }: { children: React.ReactNode }) => {
   const [mounted, setMounted] = useState(false);
@@ -16,20 +17,22 @@ const Indexlayout = ({ children }: { children: React.ReactNode }) => {
 
   if (!mounted) return null;
   return (
-    < >
-      {/* <Toaster position="top-center" /> */}
-      <Preloader />
-      <Header />
-      <WhatsappButton />
-      {/* <Cursor /> */}
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <main className="o-hidden">
-            <Suspense fallback={<div></div>}>{children}</Suspense>
-            <Footer />
-          </main>
+    <>
+      <ReactQueryProvider>
+        {/* <Toaster position="top-center" /> */}
+        <Preloader />
+        <Header />
+        <WhatsappButton />
+        {/* <Cursor /> */}
+        <div id="smooth-wrapper">
+          <div id="smooth-content">
+            <main className="o-hidden">
+              <Suspense fallback={<div></div>}>{children}</Suspense>
+              <Footer />
+            </main>
+          </div>
         </div>
-      </div>
+      </ReactQueryProvider>
     </>
   );
 };
