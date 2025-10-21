@@ -1,12 +1,19 @@
 "use client";
 
-import { IBlog } from "@/types/IBlogPost";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
+interface BlogPost {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  date: string;
+  category: string;
+}
 
 interface BlogCardProps {
-  post: IBlog;
+  post: BlogPost;
 }
 
 export default function BlogCard({ post }: BlogCardProps) {
@@ -39,7 +46,7 @@ export default function BlogCard({ post }: BlogCardProps) {
       {/* Content Container */}
       <div className="p-6 flex flex-col h-full">
         {/* Date */}
-        <p className="text-sm text-muted-foreground mb-2">{formatDistanceToNow(new Date(post.createdAt), { addSuffix: true })}</p>
+        <p className="text-sm text-muted-foreground mb-2">{post.date}</p>
 
         {/* Title */}
         <h4 className="text-xl font-bold text-foreground mb-3 line-clamp-2 group-hover:text-primary transition-colors">
